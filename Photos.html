@@ -12,18 +12,35 @@
       <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
     </head>
     <body>
-      <h1 class="title">hello i am photos</h1>
-      <section class="tabs w3-animate-top">
+      <h1 class="titlePhotos">hello i am photos</h1>
+      <section class="tabsPhotos" id="MyAssisSticky">
         <a href="Index.html">Home</a>
         <a href="Photos.html">Photos</a>
         <a href="Songs.html">Songs</a>
         <a href="About.html">About</a>
-          <!--<img height="1400" width="2000" src="./images/TomiIGPics/TomiPic1.jpg">
-          <img height="1500" width="2000" src="./images/TomiIGPics/TomiPic2.jpg">
-          <img height="1500" width="2000" src="./images/TomiIGPics/TomiPic3.jpg">
-          <img height="1500" width="2000" src="./images/TomiIGPics/TomiPic4.jpg">
-          <img height="1500" width="2000" src="./images/TomiIGPics/TomiPic6.jpg">-->
+        </section>
+        <div class="gallery">
+            <img src="./images/TomiIGPics/TomiPic1.jpg">
+            <img src="./images/TomiIGPics/TomiPic2.jpg">
+            <img src="./images/TomiIGPics/TomiPic3.jpg">
+            <img src="./images/TomiIGPics/TomiPic4.jpg">
+            <img src="./images/TomiIGPics/TomiPic6.jpg">
+        </div>
     </body>
+    <script>
+      window.onscroll=function() {myFunction()};
+      var header=document.getElementById("MyAssisSticky")
+      var sticky=header.offsetTop
+      function myFunction(){
+        if (window.pageYOffset > sticky) {
+         header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+        
+      }
+    </script>
+
     <!--<button type="button" onclick= "myFunction()">Click</button>
       <p id="demo">this is a demonstration</p>
       <script>function myFunction(){

@@ -59,10 +59,18 @@
             <div class="malone-content">
       <section class="malone-song">
         <h1 class="malone-header">Check out my recent song</h1>
-        <button onClick="songBackward()"></button>
+        <div class="video-buttons">
+        <button class="arrow-buttons" onClick="songBackward()">
+          <img class="arrows" src="./images/left-arrow.png">
+        </img>
+        </button>
         <iframe width="420" height="315" id="embed-song"
         src="https://www.youtube.com/embed/RvcotRcB41I"></iframe>
-        <button onClick="songForward()"></button>
+        <button class="arrow-buttons" onClick="songForward()">
+          <img class="arrows" src="./images/right-arrow.png">
+        </img>
+        </button>
+        </div>
       </section>
       
       <section class="malone-socials">
