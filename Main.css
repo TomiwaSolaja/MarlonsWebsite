@@ -1,0 +1,172 @@
+body {
+  background-image: url("./images/makloon_good_pic.jpg");
+  background-color: rgb(230, 0, 230);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+.title {
+text-align: center;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+/*.malone{
+    width: 800px;
+    height:800px;
+    top:50%;
+    left:50%;
+    transform: translate(-70%,-50%);
+    position: absolute;
+    
+}*/
+
+.malone-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.malone-header {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  margin-bottom: 1.5em;
+}
+
+.malone-socials {
+  margin-top: 1.5em;
+}
+
+
+.social-buttons {
+  background-color: transparent;
+  border: none;
+}
+.social-images {
+  height: 50px;
+}
+a {
+  text-decoration: none;
+}
+.tabs{
+  color: black;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tabs :hover {
+color: #008C76FF;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 400px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-content: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.song-description {
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+.Songs{
+    display: flex;
+    flex-flow: row wrap;
+}
+.song_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.morph_orph{
+    position: absolute;
+    color: #FFF;
+
+}
+a.song_1:hover img{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.song_1 p{
+    visibility: hidden;
+}
+.song_1:hover p{
+    visibility: visible;
+}
+.song_2{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+}
+a.song_2:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.second_song{
+    position: absolute;
+    color: #FFF;
+
+}
+.song_2 p{
+    visibility: hidden;
+}
+.song_2:hover p{
+    visibility: visible;
+}
+
+
+.song_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+}
+a.song_3:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.third_song{
+  position: absolute;
+  color: #FFF;
+
+}
+.song_3 p{
+  visibility: hidden;
+}
+.song_3:hover p{
+  visibility: visible;
+}
+.song_4{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  flex-direction: column;
+}
+a.song_4:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.fourth_song{
+  position: absolute;
+  color: #FFF;
+
+}
+.song_4 p{
+  visibility: hidden;
+}
+.song_4:hover p{
+  visibility: visible;
+}

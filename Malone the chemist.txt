@@ -1,0 +1,4 @@
+Sticky image
+links to instas,twitter,spotify
+banner picture
+options fade in when web page starts
