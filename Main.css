@@ -81,8 +81,13 @@ color: #008C76FF;
 }
 .Songs{
     display: flex;
-    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    align-items: stretch;
 }
+/* .Songs img{
+  width: 100%;
+} */
 .song_1{
     display: flex;
     justify-content: center;
@@ -202,8 +207,24 @@ a.song_4:hover{
   color: white;
   font-family: 'Carrois Gothic SC', sans-serif;
   display: flex;
-  font-size: 40px;
+  font-size: 1em;
   justify-content: space-evenly;
+}
+.tabsPhotos1:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.tabsPhotos2:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.tabsPhotos3:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.tabsPhotos4:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
 }
 .tabsPhotos.content {
   padding: 16px;
