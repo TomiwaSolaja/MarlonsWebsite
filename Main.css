@@ -99,6 +99,30 @@ color: #008C76FF;
     color: #FFF;
 
 }
+/*prepage stuff */
+
+.pre-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.malone-song {
+  display: flex;
+  justify-content: center;
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+}
+/* stop */
 
 .arrows { 
   display: flex;
@@ -109,6 +133,7 @@ color: #008C76FF;
   background: transparent;
   border: transparent;
   height: 100px;
+  cursor: pointer;
 }
 .video-buttons {
   display: flex;
