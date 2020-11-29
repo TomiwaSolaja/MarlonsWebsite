@@ -10,19 +10,24 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
     <script>
-        const songs = ["https://www.youtube.com/embed/RvcotRcB41I", "https://www.youtube.com/embed/jw53YMbV__g?controls=0", "https://www.youtube.com/embed/huWtHzwoQSA?controls=0"]
-        let n = 3;
+        const songs = [{Link: "https://www.youtube.com/embed/RvcotRcB41I", Name: "Morpheus Orpheus"}, {Link: "https://www.youtube.com/embed/jw53YMbV__g", Name:"I Want to Be Cereal"}, {Link: "https://www.youtube.com/embed/huWtHzwoQSA", Name: "Malonetime"}]
+        let n = 2;
         let songChoice = songs[n];
         const songForward = function() {
           if (!songs[n+1]) {
             n = 0;
-            songChoice = songs[n];
+            console.log(songs[n].Link);
+            songChoice = songs[n].Link;
             document.getElementById("embed-song").setAttribute("src", songChoice);
+            document.getElementById("song-link").setAttribute("href", songs[n].Link);
+            document.getElementById("song-link").innerHTML = songs[n].Name;
             document.getElementById("embed-song").click();
           } else {
-          songChoice = songs[n + 1];
+          songChoice = songs[n + 1].Link;
           n++;
           document.getElementById("embed-song").setAttribute("src", songChoice);
+          document.getElementById("song-link").setAttribute("href", songs[n].Link);
+          document.getElementById("song-link").innerHTML = songs[n].Name;
           document.getElementById("embed-song").click();
           }
           
@@ -31,13 +36,17 @@
         const songBackward = function(link) {
           if (!songs[n-1]) {
             n = songs.length - 1;
-            songChoice = songs[n];
+            songChoice = songs[n].Link;
             document.getElementById("embed-song").setAttribute("src", songChoice);
+            document.getElementById("song-link").setAttribute("href", songs[n].Link);
+            document.getElementById("song-link").innerHTML = songs[n].Name;
             document.getElementById("embed-song").click();
           } else {
-          songChoice = songs[n - 1];
+          songChoice = songs[n - 1].Link;
           n--;
           document.getElementById("embed-song").setAttribute("src", songChoice);
+          document.getElementById("song-link").setAttribute("href", songs[n].Link);
+          document.getElementById("song-link").innerHTML = songs[n].Name;
           document.getElementById("embed-song").click();
           }
           
@@ -54,7 +63,7 @@
         </img>
         </button>
         <iframe width="420" height="315" id="embed-song"
-        src="https://www.youtube.com/embed/huWtHzwoQSA?controls=0"></iframe>
+        src="https://www.youtube.com/embed/huWtHzwoQSA"></iframe>
         <button class="arrow-buttons" onClick="songForward()">
           <img class="arrows" src="./images/right-arrow.png">
         </img>
@@ -62,11 +71,11 @@
         </div>
       </section>
       <section class="links">
-          <ul>
-          <li><a href="https://open.spotify.com/track/2qEFMkpKRuAc4fyJMt7Vq2">Morpheus Orpheus</a>
-          <li><a href="https://open.spotify.com/track/6hGky96ay6Nv9VY3AddxYo">I Want to Be Cereal</a>
-          <li><a href="https://open.spotify.com/track/38qBCszl5oJm2VbyZulsSc">Malonetime</a>
-          </ul>
+        <a id="song-link" href="https://open.spotify.com/track/2qEFMkpKRuAc4fyJMt7Vq2">Malonetime</a>
+        <!--
+          <a href="https://open.spotify.com/track/6hGky96ay6Nv9VY3AddxYo">I Want to Be Cereal</a>
+          <a href="https://open.spotify.com/track/38qBCszl5oJm2VbyZulsSc">Malonetime</a>
+        -->
       </section>
       <section class="button">
           <button>Continue to homepage</button>
