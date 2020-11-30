@@ -1,3 +1,9 @@
+.PREPAGE{
+  background-image: url("./images/Starry.jpg");
+  background-color: black;
+  background-size:1500px;
+  background-repeat: no-repeat;
+}
 body {
   background-image: url("./images/makloon_good_pic.jpg");
   background-color: rgb(230, 0, 230);
@@ -272,4 +278,11 @@ a.song_4:hover{
 }
 .gallery img{
   width:100%
+}
+.NewMusic{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  color: white;
+  justify-content: center;
+  display:flex;
+  font-size: 50px;
 }

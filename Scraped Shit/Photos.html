@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--color for website rgb(230, 0, 230)-->
+<html>
+    <title>
+        Malone The Chemist
+    </title>
+
+    <head>
+      <link rel="stylesheet" href="Main.css">
+      <link rel="icon" href="./images/favicon.ico">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <h1 class="titlePhotos">Photos</h1>
+      <section class="tabsPhotos" id="MyAssisSticky">
+        <a class="tabsPhotos1" href="Index.html">Home</a>
+        <a class="tabsPhotos2" href="Photos.html">Photos</a>
+        <a class="tabsPhotos3" href="Songs.html">Songs</a>
+        <a class="tabsPhotos4" href="About.html">About</a>
+        </section>
+        <div class="gallery">
+            <img src="./images/TomiIGPics/TomiPic1.jpg">
+            <img src="./images/TomiIGPics/TomiPic2.jpg">
+            <img src="./images/TomiIGPics/TomiPic3.jpg">
+            <img src="./images/TomiIGPics/TomiPic4.jpg">
+            <img src="./images/TomiIGPics/TomiPic6.jpg">
+        </div>
+    </body>
+    <script>
+      window.onscroll=function() {myFunction()};
+      var header=document.getElementById("MyAssisSticky")
+      var sticky=header.offsetTop
+      function myFunction(){
+        if (window.pageYOffset > sticky) {
+         header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+        
+      }
+    </script>
+
+    <!--<button type="button" onclick= "myFunction()">Click</button>
+      <p id="demo">this is a demonstration</p>
+      <script>function myFunction(){
+        document.getElementById("demo").innerHTML="SDKMAMLDSLDMA"
+      }</script>-->
+</html>
+    
