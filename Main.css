@@ -32,7 +32,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 2%;
 }
 
 .malone-header {
@@ -43,7 +43,7 @@ body {
 }
 
 .malone-socials {
-  margin-top: 1.5em;
+  margin-top: 2%;
 }
 
 
@@ -126,7 +126,26 @@ color: #008C76FF;
   justify-content: center;
 }
 /* stop */
-
+.malone-video {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.bio {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  margin-left: 5%;
+  margin-top: 10%;
+  font-size: large;
+}
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.malone-picture {
+  margin: 5%;
+  margin-right: 5%;
+  height: 450px;
+}
 .arrows { 
   display: flex;
   width: 100px;
