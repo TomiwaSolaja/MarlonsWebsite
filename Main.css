@@ -6,9 +6,7 @@ body {
   background-blend-mode: lighten;
 }
 .title {
-  text-align: center;
   width: 7%;
-  display: flex;
   color: black;
   font-family: 'Carrois Gothic SC', sans-serif;
   margin-left: 1.5em;
@@ -87,9 +85,9 @@ color: #008C76FF;
 }
 .Songs{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap:wrap;
-    align-items: stretch;
+    align-items: center;
 }
 /* .Songs img{
   width: 100%;
@@ -146,6 +144,10 @@ color: #008C76FF;
   margin-right: 5%;
   height: 450px;
 }
+video:focus {
+  outline: none;
+}
+
 .arrows { 
   display: flex;
   width: 100px;
@@ -291,4 +293,22 @@ a.song_4:hover{
 }
 .gallery img{
   width:100%
+}
+
+
+/* responsive mobile design */
+
+@media only screen and (max-width: 600) {
+  .top-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+    display: flex;
+    color: black;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    margin-left: 1.5em;
+  }
 }
